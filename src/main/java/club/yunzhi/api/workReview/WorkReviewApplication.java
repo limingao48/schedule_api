@@ -24,6 +24,5 @@ import static java.lang.Math.tan;
 @ServletComponentScan //webSocket
 public class WorkReviewApplication {
     public static void main(String[] args) throws FileNotFoundException, IOException {
-        SpringApplication.run(WorkReviewApplication.class, args);
     }
 }
