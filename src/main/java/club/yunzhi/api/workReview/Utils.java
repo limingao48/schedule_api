@@ -15,22 +15,7 @@ import java.util.regex.Pattern;
  */
 public class Utils {
 
-    /**
-     * 生成随机数字字符串
-     *
-     * @param length 字符串长度
-     * @return
-     */
-    public static String generateRandomNumberCode(int length) {
-        Assert.isTrue(length > 0, "传入的长度必须为正值");
-        Assert.isTrue(length <= 9, "最长支持9位随机数");
-        int base = 1;
-        for (int j = 0; j < length; j++) {
-            base = base * 10;
-        }
-        int randomNum = new Random().nextInt(base);
-        return String.format(String.format("%%%sd", length), randomNum).replace(" ", "0");
-    }
+
 
     /**
      * 随机生成手机号
